@@ -49,8 +49,6 @@ In this version we don't have API models, we use application models to transfer 
 
 ```
  📦Contoso.API
- ┣ 📂Entities
- ┃ ┗ 📜Invoice
  ┣ 📂Features
  ┃ ┗ 📂Invoices
  ┃ ┃ ┣ 📜Controller
@@ -63,9 +61,12 @@ In this version we don't have API models, we use application models to transfer 
  ┃ ┗ 📂Database
  ┃ ┃ ┣ 📜InvoiceQueries
  ┃ ┃ ┗ 📜InvoiceRepository
- ┗ 📂Services
-   ┣ 📜IInvoiceQueries
-   ┗ 📜IInvoiceRepository
+ ┗ 📂Domain
+   ┣ 📂Entities
+   ┃ ┗ 📜Invoice
+   ┗ 📂Services
+     ┣ 📜IInvoiceQueries
+     ┗ 📜IInvoiceRepository
  ```
 
 This architecture can be good to start a project and if the project grows go to the other solution.
